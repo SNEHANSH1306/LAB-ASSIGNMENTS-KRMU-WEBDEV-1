@@ -1,0 +1,262 @@
+/* ----------------------------------------------------- */
+        /* NAME- SNEHANSH JANGIR
+        SECTION- B.TECH CSE (AI & ML)
+        PROJECT NAME- STYLING OF PORTFOLIO WEBSITE PROJECT */
+/* ----------------------------------------------------- */
+
+/* FONT */
+
+/* .eb-garamond- <SNEHANSH> {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: <500>;
+  font-style: normal;
+} */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'EB Garamond', serif;
+}
+
+ 
+/* BODY */
+
+body {
+    background-color: #f9f7ff;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    background-color: #6a0dad;
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+    position: static;
+    top: 0px;
+    z-index: 100;
+}
+
+header h1 {
+    font-size: 50px;
+}
+nav{
+    background-color: #6a0dad;
+    position: sticky;
+}
+nav ul {
+    margin-top: 20px;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 8px;
+}
+
+nav ul li a:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+/* SECTIONS */
+
+section {
+    
+    padding-top: 50px;
+    text-align: center;
+}
+
+section h2 {
+    color: #6a0dad;
+    font-size:35px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #945acb;
+    display: inline-block;
+    padding-bottom: 0;
+    border-radius: 5px;
+}
+
+/* WELCOME TO ME PORTFOLIO */
+
+#portfolio p{
+    max-width: 800px;
+    margin: auto;
+    padding: 15px;
+    border-left: 4px solid #945acb;
+    background-color: #f4e9ff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+#portfolio p:hover{
+    border-radius: 10px;
+    transform: translateY(-3px);
+}
+/* ABOUT ME */
+
+#about img {
+    border-radius: 20px;
+    margin: 20px 0;
+    width: 300px;
+    height: auto;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+#about img:hover{
+    border-radius: 20px;
+    transform: translateY(-3px);
+}
+
+#about p {
+    max-width: 800px;
+    margin: auto;
+    text-align: justify;
+    padding: 15px;
+    border-left: 4px solid #945acb;
+    background-color: #f4e9ff;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+#about p:hover{
+    border-radius: 20px;
+    transform: translateY(-3px);
+}
+/* PROJECTS */
+
+#projects ul {
+    list-style: none;
+    text-align: justify;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#projects li {
+    max-width: 800px;
+    margin: 20px;
+    padding: 15px;
+    border-left: 4px solid #945acb;
+    background-color: #f4e9ff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+#projects li:hover{
+    border-radius: 10px;
+    transform: translateY(-3px);
+}
+
+/* SKILLS */
+
+table {
+    border: 4px solid#6a0dad;
+    border-radius: 15px;
+    margin: 20px auto;
+    width: 800px;
+    background-color: #fff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    background-color: #f4e9ff;
+    border: 2px solid #ded7de;
+}
+
+th {
+    background-color: #6a0dad;
+    color: white;
+    font-weight: 600;
+}
+
+/* FOOTER */
+
+#cont{
+    color: white;
+    font-size: 35px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #945acb;
+    display: inline-block;
+    padding-bottom: 0;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+    background: #fdfcff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+form :hover{
+    border-radius: 10px;
+    transform: translateY(-3px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    font-weight: 600;
+    color: #6a0dad;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #6a0dad;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+footer {
+    background-color: #6a0dad;
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+/* BACK TO TOP BUTTON */
+#top a{
+    text-decoration: none
+}
+#top{
+    
+    background-color: #fff;
+    color: #6a0dad;
+    position: relative;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+}
+#top:hover {
+    border-radius: 10px;
+    transform: translateY(-3px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+        /* -----------------------------------FINISHED----------------------------------- */
