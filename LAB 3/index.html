@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header id="site-header">
+            <div class="container header-inner">
+                <div class="brand">
+                  <h1>SNEHANSH JANGIR</h1>
+                  <p class="sub">B.Tech CSE (AI & ML)</p>
+                </div>
+
+                <nav id="main-nav" class="nav">
+                  <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+          <!-- HERO -->
+            <section id="hero" class="hero">
+                <div class="container hero-inner">
+                  <div class="hero-text">
+                    <h2>Hello, I am <span class="accent">Snehansh</span></h2>
+                    <h3 id="col">I am a Full Stack Developer, Aviation Enthusiast</h3>
+                    <p>
+                      A B.Tech student passionate about web development and aviation.
+                      I build things with HTML, CSS, Java, and Python.
+                    </p>
+                    <br>
+                    <div class="hero-cta">
+                      <a class="btn primary" href="#projects">See Projects</a>
+                      <a class="btn outline" href="#contact">Contact Me</a>
+                    </div>
+                  </div>
+
+                  <div class="hero-image">
+                    <img src="IMG-20250907-WA0026.jpg" alt="My Profile Photo">
+                  </div>
+
+                </div>
+            </section>
+
+          <!-- ABOUT -->
+            <section id="about" class="about">
+                <div class="container">
+                  <h2 id="abt">About Me</h2><br>
+
+                  <div class="about-grid">
+                    <div class="about-card" id="about-card">
+                      <p>
+                        I am currently pursuing B.Tech in CSE at K.R. Mangalam University.
+                        I’m also an aspiring pilot with a fascination for aviation.
+                      </p>
+                      <p>
+                        I enjoy building projects in HTML, CSS, Python and exploring new technologies.
+                      </p>
+                    </div>
+
+                    <aside class="about-quick" id="about-quick">
+                      <ul>
+                        <li><strong>Location:</strong> India</li>
+                        <li><strong>Education:</strong> B.Tech CSE (AI & ML)</li>
+                        <li><strong>Interests:</strong> Web Dev, Aviation, Music</li>
+                      </ul>
+                    </aside>
+                  </div>
+
+                </div>
+            </section>
+
+          <!-- PROJECTS -->
+            <section id="projects" class="projects">
+                <div class="container">
+                  <h2>Projects</h2><br>
+
+                  <div class="grid projects-grid">
+                    <article class="card project-card">
+                      <h4>Movie Recommendation System</h4>
+                      <p>A Python system that suggests movies based on user preferences.</p>
+                      <p class="tag">Python • Data</p>
+                    </article>
+
+                    <article class="card project-card">
+                      <h4>Menu Mate</h4>
+                      <p>An app that processes weekly menus & suggests alternate recipes.</p>
+                      <p class="tag">AI • Automation</p>
+                    </article>
+
+                    <article class="card project-card">
+                      <h4>Portfolio Website</h4>
+                      <p>A responsive one-page portfolio using HTML & CSS.</p>
+                      <p class="tag">HTML • CSS</p>
+                    </article>
+                  </div>
+
+                </div>
+            </section>
+
+          <!-- SKILLS -->
+            <section id="skills" class="skills">
+              <div class="container">
+                <h2>Skills</h2><br>
+
+                <div class="grid skills-grid">
+                  <div class="card skill-card"><h5>HTML</h5><p>Beginner</p></div>
+                  <div class="card skill-card"><h5>CSS</h5><p>Beginner</p></div>
+                  <div class="card skill-card"><h5>Python</h5><p>Intermediate</p></div>
+                  <div class="card skill-card"><h5>Guitar</h5><p>Professional</p></div>
+                  <div class="card skill-card"><h5>Sketch Art</h5><p>Intermediate</p></div>
+                  <div class="card skill-card"><h5>Cuber</h5><p>Intermediate</p></div>
+                </div>
+
+              </div>
+            </section>
+
+          <!-- CONTACT -->
+            <section id="contact" class="contact">
+                <div class="container">
+                  <h2>Contact</h2>
+
+                  <form class="contact-form">
+                    <label>Name</label>
+                    <input type="text" id="name" required placeholder="Write Name Here">
+
+                    <label>Email</label>
+                    <input type="email" id="mail" required placeholder="Write E-mail Here">
+
+                    <label>Message</label>
+                    <textarea rows="5" id="message" required placeholder="Write Message Here"></textarea>
+
+                    <button class="btn primary" type="submit">Send</button>
+                  </form>
+
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+              <p>© 2025 Snehansh Jangir — All rights reserved</p>
+            </div>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,313 @@
+/* -----BODY----- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f0ff;
+  color: #222;
+  line-height: 1.6;
+}
+
+h2{
+  font-size: 2rem;
+  color: #6a0dad;
+}
+
+/* -----Container----- */
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* -----HEADER AND NAVIGATION----- */
+
+header {
+  background: #6a0dad;
+  color: white;
+  padding: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.4rem;
+}
+
+.brand .sub {
+  font-size: 0.8rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: 800;
+}
+
+nav a:hover {
+  background: #7943ab;
+}
+
+/* -----HERO SECTION (FLEXBOX)----- */
+.hero {
+  padding: 50px 0;
+}
+
+.hero-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero-text {
+  flex: 1 1 300px;
+}
+
+.hero-text h2 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+
+.accent {
+  font-size: 2rem;
+  color: #6a0dad;
+  font-weight: bold;
+}
+
+
+#col{
+  color: #6a0dad;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+/* -----Buttons----- */
+.btn {
+  background: #6a0dad;
+  padding: 10px 18px;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  border: 2px solid #6a0dad;
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  background: #945acb;
+  border-color: #5f10aa7b;
+}
+
+.btn.outline {
+  background: white;
+  color: #6a0dad;
+}
+
+.btn.outline:hover {
+  background: #6a0dad;
+  color: white;
+}
+
+/* -----HERO IMAGE (LEVITATING ANIMATION)----- */
+
+.hero-image img {
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  animation: float 3.5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* -----ABOUT SECTION----- */
+
+#about {
+  padding: 50px 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+#about-card:hover{
+  background-color: #f5f0ff;
+}
+
+#about-quick:hover{
+  background-color: #f5f0ff;
+}
+
+.about-card, .about-quick {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #6a0dad;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);  
+  animation: float 3.5s ease-in-out infinite;
+}
+
+.about-quick ul {
+  list-style: none;
+}
+
+/* -----PROJECTS (GRID + ANIMATION)----- */
+
+#projects {
+  padding: 50px 0;
+}
+
+.projects-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.prjects-grid:hover{
+  transform: translateY(-3px);
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #6a0dad;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  /* Levitating animation */
+  animation: float 3.5s ease-in-out infinite;
+}
+
+.project-card:hover{
+  background-color:#f5f0ff;
+}
+
+/*-----SKILLS (GRID + POP ANIMATION)-----*/
+
+#skills {
+  padding: 50px 0;
+}
+  
+.skills-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.skill-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  animation: float 3.5s ease-in-out infinite;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.skill-card:hover{
+  background-color: #f5f0ff;
+}
+/* -----CONTACT FORM----- */
+
+.contact-form {
+  max-width: 550px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  animation: float 3.5s ease-in-out infinite;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+#name:hover{
+  background-color: #f1eff5;
+}
+
+#mail:hover{
+  background-color: #f1eff5;
+}
+
+#message:hover{
+  background-color: #f1eff5;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #6a0dad;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+/* -----FOOTER----- */
+
+footer {
+  background: #6a0dad;
+  color: white;
+  text-align: center;
+  padding: 18px 0;
+  margin-top: 40px;
+}
+
+/* /* ===========================
+   RESPONSIVE DESIGN
+/* =========================== */
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .projects-grid,
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
